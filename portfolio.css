@@ -1,0 +1,580 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.img{
+    padding:8px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width:129px;
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 2px solid rgb(90, 81, 81);
+}
+
+.img p{
+    padding:10px;
+    }
+
+.link{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(23, 21, 21, 0.959);
+    justify-content: center;
+    width:100px;
+    height: fit-content;
+    padding:8px;
+    text-align: center;
+    
+}
+
+.link a{
+    text-decoration: none;
+    padding:4px;
+    color:rgb(137, 127, 127);
+}
+
+.link a::after {
+    content: '';
+    display: block;
+    height: 1px; /* Thickness of the line */
+    background-color: rgb(52, 49, 49); 
+    margin: 4px 0; 
+}
+
+.img::after{
+    content: '';
+    display: block;
+    height: 1px; 
+    background-color: rgb(52, 49, 49); 
+    margin: 4px 0;
+}
+
+.hig{
+    background-color: rgba(16, 15, 15, 0.959);
+    width:145px;
+    height: 538px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hig a:hover{
+    color:blueviolet;
+}
+
+.link {
+    margin-bottom: 20px; 
+}
+
+.social-icons a {
+    margin: 5px; 
+    text-decoration: none;
+}
+
+.container {
+    display: flex; 
+    flex-direction: row; 
+   
+    align-items:stretch; 
+    
+    background-color: #f0f0f0; 
+    margin-left: 150px; 
+}
+
+.nav {
+
+    height:auto; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 150px; 
+    height: 100vh; 
+    background-color: rgba(16, 15, 15, 0.959); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10; 
+    
+}
+.all_profile{
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.profile {
+    position:relative;
+    flex-grow: 1; 
+    overflow:hidden;
+    position:relative;
+    /* background-image: url("image/MyProfile.jpeg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      
+}
+
+.profile::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/software.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.profile h1, .profile a, .profile span {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background pseudo-element */
+}
+.profile span{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color:white;
+    
+}
+.profile h1
+{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: #95a117;
+}
+.profile span.body-tag{
+    margin-left:20px;
+    margin-top: 20px; 
+    display:inline-block;
+}
+
+.h1-tag{
+    margin-top: 40px;
+    margin-left:20px;
+    display: block;
+}
+
+.profile h1{
+    margin-left:30px;
+    margin-top: 60px;
+    
+}
+.profile span.body-tag1{
+    margin-left:20px;
+    margin-top: 40px; 
+    display:inline-block;
+}
+
+.h1-tag1{
+    margin-top: 55px;
+    margin-left:20px;
+    display: block;
+}
+
+.profile span.html-tag1{
+    display:block;
+    margin-top: 20px;
+}
+
+.profile a{
+    padding:10px;
+    margin-top: 200px;
+    margin-left:590px;
+    text-decoration: none;
+    display:block;
+    background-color: rgb(253, 3, 232);
+    width:fit-content;
+    color:white;
+    border:1px solid black;
+    border-radius: 6px;
+
+}
+.about{
+    padding: 20px;
+}
+
+h2{
+    padding:40px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.aboutinfo
+{
+    margin-top: 100px;
+    display: flex;
+}
+
+.aboutinfo p
+{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.aboutinfo li
+{
+    padding:10px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity:0.8;
+}
+
+.aboutinfo2{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    width:fit-content;
+    height: 320px;
+    background-color:rgb(59, 55, 52);
+    
+}
+
+.social-icons1 a {
+    margin: 10px; /* Space between social icons */
+    text-decoration: none;
+    
+    
+}
+
+.aboutinfo1{
+    height: fit-content;
+}
+
+
+.aboutinfo pre{
+    
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aboutinfo pre b{
+    display: block;
+    margin-left: 100px;
+    
+}
+
+.Myskill{
+    padding:20px;
+}
+
+.Education{
+    padding:20px;
+}
+
+.educationinfo{
+    margin-top: 100px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.eduname{
+    opacity: 0.8;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+.dot-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Adjust spacing as needed */
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(43, 171, 197); /* Adjust color as needed */
+    border-radius: 50%;
+    margin-right: 2px;
+    
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: black; /* Adjust color as needed */
+    opacity:0.5;
+    
+}
+
+.clgname{
+    opacity: 0.6;
+    margin-top:18px ;
+}
+
+.edu{
+    flex-grow: 1;
+}
+
+.Myskill{
+    padding:20px;
+
+}
+
+.skill1 {
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 100%;
+    margin: 10px 0;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    background:linear-gradient(to right, #1db4be var(--value), #ddd var(--value));
+    border-radius: 5px;
+    outline: none;
+    pointer-events: none;
+}
+
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #1db4be;
+   
+    cursor: not-allowed;
+    z-index: 2;
+    position: relative;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #1db4be;
+
+    cursor: not-allowed;
+    position: relative;
+    z-index: 2;
+}
+
+.skillitem{
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skillitem label{
+    font-weight: bold;
+    color: #333;
+}
+
+.skillinfo{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    
+}
+.skill1, .skill2 {
+    flex: 1; /* Ensures both take equal space */
+    padding: 20px; /* Optional: Adds some spacing inside */
+    box-sizing: border-box; /* Includes padding in width calculations */
+}
+.courseinfo {
+    margin-top: 100px;
+    display: flex;
+    align-items: center; /* Ensures items are aligned vertically */
+    justify-content: space-between; /* Creates space between items */
+    width: 100%; /* Full width container */
+    gap:10px;
+}
+
+.courseinfo div {
+    flex: 1; /* Each content div takes equal space */
+    height: 200px; /* Set height */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: aqua; /* Background color for testing */
+}
+
+.courseinfo div a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Anchor text color */
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.courseinfo div:hover {
+    background-color: rgb(97, 58, 146); /* Hover background */
+}
+
+.courseinfo div:hover a {
+    color: #ddd; /* Hover text color */
+}
+
+/* .courseinfo div a:hover{
+    color: black;
+} */
+
+/* Vertical line styles */
+.vertical-line {
+    width: 2px; /* Thickness of the vertical line */
+    height: 150px; /* Height of the line */
+    background-color: gray; /* Line color */
+    align-self: stretch;
+    display: block; /* Ensure it's treated as a block element */
+    margin: 0 10px; /* Space around the line */
+}
+.ProjectInfo {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+    gap: 30px;
+}
+
+.ProjectInfo div {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 400px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.ProjectInfo div a img {
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.ProjectInfo div h1 {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    color: white;
+    
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+.ProjectInfo div:hover h1 {
+    display: block;
+}
+
+
+.ProjectInfo div:hover a img {
+    filter: brightness(50%);
+    transform: scale(1.1);
+}
+
+
+.contact-section {
+    padding: 40px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    max-width: 500px;
+    
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section form label {
+    font-size: 18px;
+    color: #555;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-section form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-section form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.contact-section form button:hover {
+    background-color: #2980b9;
+}
+
+#statusMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #28a745; 
+}
+
+#statusMessage.error {
+    color: #e74c3c; 
+}
+
+.contact-section form input:focus,
+.contact-section form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
